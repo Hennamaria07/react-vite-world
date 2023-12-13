@@ -25,6 +25,7 @@ const generatedPassword = useCallback(() => {
   }
   setPassword(pass);
 } , [length, number, character, setPassword]);
+
 useEffect (() => {
   generatedPassword();
 }, [length, number, character, generatedPassword]);
